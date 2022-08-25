@@ -1,0 +1,12 @@
+body {
+  background-color: #eaddca;
+}
+table {
+  width: 50%;
+}
+td {
+  text-align: left;
+}
+input[type="text"] {
+  width: 20%;
+}

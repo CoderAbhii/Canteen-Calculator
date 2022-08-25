@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2> CANTEEN CALCULATOR </h2>
+        <hr>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>1.TEA</label> </td>
+                    <td> <label for="chkTEA"> <input type="checkbox" id="chkTEA" onclick="TEAchecked(this)"> </label>
+                    </td>
+                    <td>₹ 10 / cup</td>
+                </tr>
+                <tr>
+                    <td><label>2.COFFEE</label> </td>
+                    <td><label for="chkCOFFEE"> <input type="checkbox" id="chkCOFFEE" onclick="COFFEEchecked(this)">
+                        </label> </td>
+                    <td>₹ 20 / cup </td>
+                </tr>
+                <tr>
+                    <td><label>3.PATTIES </label> </td>
+                    <td><label for="chkPATTIES"> <input type="checkbox" id="chkPATTIES" onclick="PATTIESchecked(this)">
+                        </label> </td>
+                    <td>₹ 30 / peice </td>
+                </tr>
+                <tr>
+                    <td><label>4.MOMOS </label> </td>
+                    <td><label for="chkMOMOS"> <input type="checkbox" id="chkMOMOS" onclick="MOMOSchecked(this)">
+                        </label> </td>
+                    <td>₹ 40 / plate </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="divTEA" style="display:none">
+            <input type="text" value="TEA" readonly="">
+            <input type="text" value=" ₹ 10 / cup " readonly="">
+            <input type="text" placeholder="Enter Qnty" id="s1" onkeyup="TEAtotal()"> = ₹
+            <input type="text" id="s2" readonly="">
+        </div>
+        <br>
+        <div id="divCOFFEE" style="display:none">
+            <input type="text" value="COFFEE" readonly="">
+            <input type="text" value=" ₹  20 / cup " readonly="">
+            <input type="text" placeholder="Enter Qnty" id="p1" onkeyup="COFFEEtotal()"> = ₹
+            <input type="text" id="p2" readonly="">
+        </div>
+        <br>
+        <div id="divPATTIES" style="display:none">
+            <input type="text" value="PATTIES" readonly="">
+            <input type="text" value=" ₹  30 / peice " readonly="">
+            <input type="text" placeholder="Enter Qnty" id="b1" onkeyup="PATTIEStotal()"> = ₹
+            <input type="text" id="b2" readonly="">
+        </div>
+        <br>
+        <div id="divMOMOS" style="display:none">
+            <input type="text" value="MOMOS" readonly="">
+            <input type="text" value=" ₹  40 / plate " readonly="">
+            <input type="text" placeholder="Enter Qnty" id="sa1" onkeyup="MOMOStotal()"> = ₹
+            <input type="text" id="sa2" readonly="">
+        </div>
+        <br>
+        <hr>
+        <h3> Grand Total : ₹ <label id="grandtotal"></label></h3>
+        <h4>Made By Abhishek Rawat</h4>
+        <hr>
+    </center>
+    <script src="app.js"></script>
+</body>
+</html>
